@@ -1,14 +1,35 @@
-h1 {
-    color:coral;
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.green {
-    color: darkgreen;
-    text-decoration: underline;
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: darksalmon;
+
+    /*Определяем модель flex-box для блока header*/    
+    display: flex;
+    flex-direction: column;  /*Выстраиваем flex-элементы в колонку, основная ось y*/
+
+    justify-content: center; /*выравнивание по вертикали(основной оси)*/
+    align-items: center; /*выравнивание по горизонтали(поперечной оси)*/
 }
 
+.header-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 130%;
+}
 
-.red {
-    color: darkred;
-    text-decoration: overline;
+.header-subtitle {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
 }
